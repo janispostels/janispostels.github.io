@@ -5,7 +5,7 @@
   
   <meta name="author" content="Janis Postels">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  0.00
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/icon.png">
 </head>
@@ -23,7 +23,9 @@
               <p>I am a PhD candidate at the Computer Vision Lab at ETH Zurich under the supervision of <a href="https://scholar.google.com/citations?user=TwMib_QAAAAJ">Luc Van Gool</a> (ETH Zurich) and <a href="https://scholar.google.com/citations?user=TFsE4BIAAAAJ">Federico Tombari</a> (Google).
               </p>
               <p>
-                My research primarliy focuses on uncertainty quantification in deep neural networks. Moreover, I have also worked on neural compression algorithms and generative models for various data modalities.
+                My research primarily focuses on uncertainty quantification in deep neural networks.
+                I am specifically interested in efficiently estimating epistemic uncertainty of neural networks.
+                Moreover, I have also worked on neural compression algorithms and generative models for point cloud data.
               </p>
               <p style="text-align:center">
                 <a href="mailto:jpostels@ethz.ch">Email</a> &nbsp/&nbsp
@@ -35,7 +37,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/janispostels.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/janispostels.jpg" class="hoverZoomLink"></a>
+              <a href="images/janispostels.jpg"><img style="width:100%;max-width:100%;width:200px;border-radius:50%" alt="profile photo" src="images/janispostels.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -65,11 +67,37 @@
               Luc Van Gool,
               Federico Tombari
               <br>
-							<em>arXiv</em>, 2021
+							<em>European Conference on Computer Vision</em>, 2022
               <br>
-              <a href="https://arxiv.org/abs/2112.04267">paper</a>
+              <a href="https://arxiv.org/abs/2112.04267">paper</a> <br>
+              <a href="https://github.com/YannickStruempler/inr_based_compression">code</a>
               <p></p>
               <p>We propose a neural image compression algorithm by leveraging neural implicit representations and meta-learning.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffff">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img style="width:100%;max-width:100%" alt="teaser image" src="images/practicality_teaser.png" class="hoverZoomLink">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <strong>
+                <papertitle>On the Practicality of Deterministic Epistemic Uncertainty</papertitle>
+              </strong>
+              <br>
+              <strong>Janis Postels</strong>,
+              Mattia Segu,
+              Tao Sun,
+              Luc Van Gool,
+              Fisher Yu,
+              Federico Tombari
+              <br>
+							<em>International Conference on Machine Learning</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2107.00649">paper</a> <br>
+              <a href="https://github.com/janisgp/practicality_deterministic_epistemic_uncertainty">code</a>
+              <p></p>
+              <p>We show that the uncertainty predicted by a recent family of methods for uncertainty estimation which treat the weights of a neural network deterministically is poorly calibrated.</p>
             </td>
           </tr>
 
@@ -117,30 +145,6 @@
               <a href="https://openreview.net/forum?id=ZDD2TbZn7X1">paper</a>
               <p></p>
               <p>We demonstrate the vulnerability of recent approaches based on VAEs for unsupervised anomaly detection in medical images.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffff">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <strong>
-                <papertitle>On the Practicality of Deterministic Epistemic Uncertainty</papertitle>
-              </strong>
-              <br>
-              <strong>Janis Postels</strong>,
-              Mattia Segu,
-              Tao Sun,
-              Luc Van Gool,
-              Fisher Yu,
-              Federico Tombari
-              <br>
-							<em>arXiv</em>, 2021
-              <br>
-              <a href="https://arxiv.org/abs/2107.00649">paper</a>
-              <p></p>
-              <p>We show that the uncertainty predicted by a recent family of methods for uncertainty estimation which treat the weights of a neural network deterministically is poorly calibrated.</p>
             </td>
           </tr>
 
@@ -207,7 +211,7 @@
               <br>
 							<em>International Conference on Computer Vision (ORAL)</em>, 2019
               <br>
-              <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Postels_Sampling-Free_Epistemic_Uncertainty_Estimation_Using_Approximated_Variance_Propagation_ICCV_2019_paper.html">paper</a>
+              <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Postels_Sampling-Free_Epistemic_Uncertainty_Estimation_Using_Approximated_Variance_Propagation_ICCV_2019_paper.html">paper</a> <br>
               <a href="https://github.com/janisgp/Sampling-free-Epistemic-Uncertainty">code</a>
               <p></p>
               <p>We propose a method to estimate the uncertainty of Bayesian neural networks in a single forward pass by applying error propagation.</p>
