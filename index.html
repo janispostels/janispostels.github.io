@@ -1,11 +1,24 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-238146368-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-238146368-1');
+  </script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Janis Postels</title>
   
   <meta name="author" content="Janis Postels">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  0.00
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/icon.png">
 </head>
@@ -40,8 +53,48 @@
               <a href="images/janispostels.jpg"><img style="width:100%;max-width:100%;width:200px;border-radius:50%" alt="profile photo" src="images/janispostels.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
+
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <hr>
+            <p style="text-align:center">
+                <a href="#tab_news">News</a> &nbsp &nbsp &nbsp &nbsp
+                <a href="#tab_publications">Publications</a> &nbsp &nbsp &nbsp &nbsp
+                <a href="#tab_posts">Blogposts</a>
+              </p>
+            <hr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        </tbody></table>
+        <table id="tab_news" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>News</heading>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <ul>
+                <li><strong>ManiFlow: Implicitly Representing Manifolds with Normalizing Flows</strong> was accepted to 3DV 2022</li>
+                <li><strong>Implicit Neural Representations for Image Compression</strong> was accepted to ECCV 2022</li>
+                <li>Our workshop on <strong><a href="https://probabilisticrobotics.github.io/">Probabilistic Robotics</a></strong> was accepted to IROS 2022</li>
+                <li><strong>On the Practicality of Deterministic Epistemic Uncertainty</strong> was accepted to ICML 2022</li>
+                <li><strong>SHIFT: A Synthetic Driving Dataset for Continuous Multi-Task Domain Adaptation</strong> was accepted to CVPR 2022</li>
+                <li><strong>Go with the Flows: Mixtures of Normalizing Flows for Point Cloud Generation and Reconstruction</strong> was accepted to 3DV 2021</li>
+                <li><strong>The OOD Blind Spot of Unsupervised Anomaly Detection</strong> was accepted to MIDL 2021</li>
+                <li><strong>Variational Transformer Networks for Layout Generation</strong> was accepted to CVPR 2021</li>
+                <li>I will join CVL at ETH as a PhD student starting from 02.2020</li>
+                <li><strong>Sampling-free epistemic uncertainty estimation using approximated variance propagation</strong> was accepted as an <strong>oral</strong> to ICCV 2019</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        </tbody></table>
+
+
+        <table id="tab_publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Publications</heading>
@@ -54,6 +107,28 @@
 
           <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffff">
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <img style="width:100%;max-width:100%" alt="teaser image" src="images/maniflow.png" class="hoverZoomLink">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <strong>
+                <papertitle>ManiFlow: Implicitly Representing Manifolds with Normalizing Flows</papertitle>
+              </strong>
+              <br>
+              <strong>Janis Postels</strong>,
+              Martin Danelljan,
+              Luc Van Gool,
+              Federico Tombari
+              <br>
+							<em>International Conference on 3D Vision 2021</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2208.08932">paper</a>
+              <p></p>
+              <p>We propose an approach for sampling from lower dimensional manifolds using normalizing flows. Moreover, we introduce an improved version of our algorithm tailored to 3D point clouds.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffff">
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <img style="width:100%;max-width:100%" alt="teaser image" src="images/inr_compression.png" class="hoverZoomLink">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -61,8 +136,8 @@
                 <papertitle>Implicit Neural Representations for Image Compression</papertitle>
               </strong>
               <br>
-              Yannick Struempler,
-              <strong>Janis Postels</strong>,
+              Yannick Struempler*,
+              <strong>Janis Postels*</strong>,
               Ren Yang,
               Luc Van Gool,
               Federico Tombari
@@ -85,8 +160,8 @@
                 <papertitle>On the Practicality of Deterministic Epistemic Uncertainty</papertitle>
               </strong>
               <br>
-              <strong>Janis Postels</strong>,
-              Mattia Segu,
+              <strong>Janis Postels*</strong>,
+              Mattia Segu*,
               Tao Sun,
               Luc Van Gool,
               Fisher Yu,
@@ -98,6 +173,34 @@
               <a href="https://github.com/janisgp/practicality_deterministic_epistemic_uncertainty">code</a>
               <p></p>
               <p>We show that the uncertainty predicted by a recent family of methods for uncertainty estimation which treat the weights of a neural network deterministically is poorly calibrated.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffff">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img style="width:100%;max-width:100%" alt="teaser image" src="images/shift.jpg" class="hoverZoomLink">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <strong>
+                <papertitle>SHIFT: A Synthetic Driving Dataset for Continuous Multi-Task Domain Adaptation</papertitle>
+              </strong>
+              <br>
+              Tao Sun*,
+              Mattia Segu*,
+              <strong>Janis Postels</strong>,
+              Yuxuan Wang,
+              Luc Van Gool,
+              Bernt Schiele,
+              Federico Tombari,
+              Fisher Yu
+              <br>
+							<em>Conference on Computer Vision and Pattern Recognition</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2206.08367">paper</a> <br>
+              <a href="https://github.com/SysCV/shift-dev">code</a> <br>
+              <a href="https://www.vis.xyz/shift/">website</a>
+              <p></p>
+              <p>We introduce a synthetic dataset for multi-task learning that allows fine-grained control over continuous distributional shifts.</p>
             </td>
           </tr>
 
@@ -178,8 +281,8 @@
                 <papertitle>The Hidden Uncertainty in a Neural Networks Activations</papertitle>
               </strong>
               <br>
-              <strong>Janis Postels</strong>,
-              Hermann Blum,
+              <strong>Janis Postels*</strong>,
+              Hermann Blum*,
               Yannick Strümpler,
               Cesar Cadena,
               Roland Siegwart,
@@ -217,9 +320,34 @@
               <p>We propose a method to estimate the uncertainty of Bayesian neural networks in a single forward pass by applying error propagation.</p>
             </td>
           </tr>
-
-
         </tbody></table>
+
+
+        <table id="tab_posts" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Blogposts</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffff">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img style="width:100%;max-width:100%" alt="teaser image" src="images/teaser_epistemic_vs_aleatoric.png" class="hoverZoomLink">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <strong>
+                <papertitle>Separating Aleatoric and Epistemic Uncertainty</papertitle>
+              </strong>
+              <br>
+              <a href="blogposts/aleatoric_vs_epistemic.html">Blogpost</a> <br>
+              <a href="https://colab.research.google.com/drive/1b_o2lHuOAeiwg-mZOhadsbb1PLhlOiMk?usp=sharing">colab</a>
+              <p></p>
+              <p>In this blogpost I first give an introduction to the commonly considered types of uncertainty. Then, I demonstrate on toy regression and classification examples how one can separate these types of uncertainties using Bayesian Neural Networks.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
 
         <a href="https://github.com/jonbarron/website">Link to Template</a>
 
